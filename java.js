@@ -17,7 +17,7 @@ let dice = [
 diceImages.src = dice [0].img;
 
 const reset = () => {
-    rollDice.textContent = "Begin a New Game"
+    rollDice.textContent = "Begin a New Game🎮"
     playerScore = 0;
     score.innerHTML = (playerScore)
 }
@@ -25,18 +25,18 @@ const reset = () => {
 rollDice.addEventListener("click", () =>{
     let player = dice[Math.floor(Math.random() * dice.length)];
     diceImages.src = player.img;
-    rollDice.textContent = ("Roll dice!");
-    answer.textContent = ("Roll the dice again....");
+    rollDice.textContent = ("Click here to roll the dice!😃");
+    answer.textContent = ("Roll again!😃");
     if (player.value == 1){
-        answer.textContent = ("You lost! Try again if you like!");
+        answer.textContent = ("You lost!😈 Try again if you like!😸");
         reset();
     }else{
         playerScore += player.value;
         score.textContent = (playerScore);
     }
     if (playerScore >= 10){
-        answer.textContent = ("Winner!");
-        rollDice.textContent = ("Would you like to play again?");
+        answer.textContent = ("Winner!👌");
+        // rollDice.textContent = ("Would you like to play again?");
         reset();
     }
 }
