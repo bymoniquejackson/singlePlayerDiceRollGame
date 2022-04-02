@@ -36,7 +36,6 @@ rollDice.addEventListener("click", () =>{
     }
     if (playerScore >= 10){
         answer.textContent = ("Winner!👌");
-        // rollDice.textContent = ("Would you like to play again?");
         reset();
     }
 }

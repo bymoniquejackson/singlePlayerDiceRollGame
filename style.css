@@ -52,7 +52,7 @@ button{
 }
 
 button:hover{
-    box-shadow: 0px 0px 50px 0px rgb(156, 53, 53);
+    box-shadow: 0px 0px 200px 60px rgb(243, 193, 30);
 }
 
 @media only screen and (max-width:1000px){
